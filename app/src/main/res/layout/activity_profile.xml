@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backNavBottom"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:id="@+id/rlToolbarTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivLogoApp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_liburanfix"
+                android:contentDescription="@string/app_name" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="@string/profil_about"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivLogoApp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/Ava"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:padding="9dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rounded_orange"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_profil"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/isiAva"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Ava"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/rahmat_alfazri"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="@string/rahmadalfazr_gmail_com"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:text="0898-8125-383"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:text="0857-1815-1550"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyDataPribadi"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/isiAva"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_rounded_black">
+
+        <LinearLayout
+            android:id="@+id/lyDataTitlePribadi"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvDataPribadiTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/data_pribadi"
+                android:textColor="@color/colorBlack"
+                android:enabled="false"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyDataPribadiContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/lyDataTitlePribadi">
+
+            <LinearLayout
+                android:id="@+id/lyNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvLabelNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/nama_profiel"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLabelNamaTik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/titikDua"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvValueNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:text="@string/rahmat_alfazri_fazri"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:enabled="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvLabelTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/tanggal_lahir"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTanggalLahirDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/titikDua"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvValueTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:text="19 Maret 2000"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:enabled="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvLabelUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/umur"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUmurDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="@string/titikDua"
+                    android:textColor="@color/colorBlack"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvValueUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:text="19 Tahun"
+                    android:textColor="@color/colorBlack"
+                    android:focusableInTouchMode="false"
+                    android:enabled="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNoHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvPendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Pendidikan"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPendDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/titikDua"
+                    android:enabled="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvValuePendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="4dp"
+                    android:focusable="false"
+                    android:text="SMK"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorBlack"
+                    android:enabled="false"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

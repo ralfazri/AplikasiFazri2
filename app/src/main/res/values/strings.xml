@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Liburan Yuk!</string>
+    <string name="goodday">Selamat Datang, </string>
+    <string name="guide">Guide</string>
+    <string name="informasi">Informasi</string>
+    <string name="foto">Foto</string>
+    <string name="video">Video</string>
+    <string name="search">Cari tempat</string>
+    <string name="judul">Nama Destinasi</string>
+    <string name="detail">Detail destinasi</string>
+    <string name="nama">Nama Guide</string>
+    <string name="detailGuide">Detail info guide</string>
+    <string name="infoDetail">Info Detail</string>
+    <string name="share">Share</string>
+    <string name="like">Like Guide</string>
+    <string name="kontak">Contact</string>
+    <string name="namaGuide">Nama Guide</string>
+    <string name="panggilan">Panggilan : </string>
+    <string name="dataSingkat">Data Singkat</string>
+    <string name="biodata">Biodata</string>
+    <string name="profile">profile</string>
+    <string name="isiProfile">Profil</string>
+    <string name="keahlian">Keahlian</string>
+    <string name="isiKeahlian">Keahlian</string>
+    <string name="uraian">Uraian</string>
+    <string name="isiUraian">Uraian</string>
+    <string name="Hubungi">Hubungi</string>
+    <string name="harga">harga</string>
+    <string name="sisa_tiket">Sisa Tiket</string>
+    <string name="detail_destinasi">Detail</string>
+    <string name="tempat">Tempat</string>
+    <string name="isi_tempat">Tempat</string>
+    <string name="paket">Paket</string>
+    <string name="isi_paket">Isi Paket</string>
+    <string name="fasilitas">Fasilitas</string>
+    <string name="isi_fasilitas">Isi fasilitas</string>
+    <string name="pilih">Pilih</string>
+    <string name="detailAtas">Detail</string>
+
+    <string name="deskripsibaru">Deskripsi</string>
+    <string name="doubleBackPressConfirmation">Silahkan tekan 2 x untuk keluar. Terima kasih</string>
+    <string name="profileatas">Profile</string>
+    <string name="gender">Gender</string>
+    <string name="isiGender">Gender</string>
+    <string name="umur">Umur</string>
+    <string name="umurisi">Umur</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="no_hp">No.Hp</string>
+    <string name="no_hpFIX">No.HP</string>
+    <string name="no_hp_nya">No HP-nya</string>
+    <string name="rahmat_alfazri">Rahmat Alfazri</string>
+    <string name="rahmadalfazr_gmail_com">rahmadalfazr@gmail.com</string>
+    <string name="profil_about">Profil / About</string>
+    <string name="data_pribadi">Data Pribadi</string>
+    <string name="nama_panjang">Nama Panjang</string>
+    <string name="nama_profiel">Nama</string>
+    <string name="titikDua">:</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="rahmat_alfazri_fazri">Rahmat Alfazri (Fazri)</string>
+    <string name="about">About</string>
+    <string name="sawah_lunto">Sawah Lunto</string>
+
+
+</resources>

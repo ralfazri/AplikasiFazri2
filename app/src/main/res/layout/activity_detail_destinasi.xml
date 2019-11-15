@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/contect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgDestinasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pixel_google" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/titleDestinasi"
+                    style="@style/TextContent.Black"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/harga"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/kotaDestinasi"
+                    style="@style/TextContent.Subtitle"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/sisa_tiket" />
+
+                <TextView
+                    style="@style/TextContent"
+                    android:id="@+id/tentangDestinasi"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="@string/deskripsi"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    style="@style/TextContent.Subtitle"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/detail_destinasi" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/tempat" />
+
+                        <TextView
+                            android:id="@+id/hotelDestinasi"
+                            style="@style/TextSpec.Value"
+                            android:text="@string/isi_tempat" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/paket" />
+
+                        <TextView
+                            android:id="@+id/paketDestinasi"
+                            style="@style/TextSpec.Value"
+                            android:text="@string/isi_paket" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            style="@style/TextSpec.Field"
+                            android:text="@string/deskripsibaru" />
+
+                        <TextView
+                            android:id="@+id/detailDestinasi"
+                            style="@style/TextSpec.Value"
+                            android:text="@string/isi_fasilitas" />
+                    </TableRow>
+                </TableLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ratingan"
+                android:orientation="vertical"
+                android:layout_below="@+id/contect"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:background="@drawable/border_rounded_black"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/titleRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/deskRatingText"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"
+                            android:text="Rating untuk tempat ini"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/deskRatingText"
+                        android:id="@+id/valueRating"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="300dp"
+                            android:focusable="false"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="false"
+                            android:saveEnabled="true"
+                            android:layout_marginBottom="3dp"
+                            android:stepSize="0"
+                            android:max="5"
+                            android:numStars="5" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/Ratingan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnPilih"
+                    style="@style/ButtonGeneral"
+                    android:text="@string/pilih" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
